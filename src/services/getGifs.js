@@ -11,7 +11,7 @@ export default function getGifs({ keyword = "morty" } = {}) {
         const gifs = data.map((image) => {
           const { title, id } = image;
           const { url } = image.images.original;
-          return { title, id, url };
+          return { title, id, url }; //Lo que devuelve en el return
         });
         return gifs;
       }

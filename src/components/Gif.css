@@ -1,1 +1,23 @@
+.content-gif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Gif {
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    background: #1b2022;
+    padding: 17px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 18px;
+    margin: 7px 0;
+    width: fit-content;
+    gap: 10px;
+    color: #dadada;
+}
 
+.Gif img {
+    max-height: 200px;
+}
