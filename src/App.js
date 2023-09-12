@@ -12,7 +12,8 @@ const Tacos = () => {
   return (
     <div>
       <h1>Tacos</h1>
-      {taco}
+      <p>{taco}</p>
+      {!(taco.toString() === "asada") ? "" : <Image></Image>}
     </div>
   );
 };
@@ -34,7 +35,6 @@ const Search = () => {
 const Image = () => {
   return (
     <div>
-      <h2>Taco Asada</h2>
       <img
         src="https://media4.giphy.com/media/k75w5q3eo0PFi7XbIj/giphy.gif?cid=ecf05e47qh6ahl2ug9f7t2dqyv45pdpyknanyq0f1cgpfp0z&ep=v1_gifs_gifId&rid=giphy.gif&ct=g"
         alt="img of Gihpy"></img>
@@ -71,7 +71,7 @@ function App() {
         <Route path="/search-page" element={<Search />}></Route>
         {/* <Route path="/tacos" element={<Tacos />}></Route> */}
         <Route path="/tacos/:taco" element={<Tacos />}></Route>
-        <Route path="/tacos/asada" element={<Image />}></Route>
+        {/* <Route path="/tacos/asada" element={<Image />}></Route> */}
       </Routes>
     </div>
   );
