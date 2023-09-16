@@ -1,5 +1,6 @@
 # Getting Started with Create React App
-
+![Alt text](image.png)
+![Alt text](image-1.png)
 ## Bootcamp React - video 2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
