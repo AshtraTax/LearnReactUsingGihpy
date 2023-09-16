@@ -13,7 +13,16 @@ const Tacos = () => {
     <div>
       <h1>Tacos</h1>
       <p>{taco}</p>
-      {!(taco.toString() === "asada") ? "" : <Image></Image>}
+      {!(taco.toString() === "asada") ? (
+        ""
+      ) : (
+        <Image src="https://media4.giphy.com/media/k75w5q3eo0PFi7XbIj/giphy.gif?cid=ecf05e47qh6ahl2ug9f7t2dqyv45pdpyknanyq0f1cgpfp0z&ep=v1_gifs_gifId&rid=giphy.gif&ct=g"></Image>
+      )}
+      {!(taco.toString() === "canasta") ? (
+        ""
+      ) : (
+        <Image src="https://media3.giphy.com/media/dSDS2C58IwtrJc1d1h/giphy.gif?cid=ecf05e47o9xulfepytr5yomzcmvo35sfz74cjctnjxsekdwx&ep=v1_gifs_search&rid=giphy.gif&ct=g"></Image>
+      )}
     </div>
   );
 };
@@ -32,12 +41,10 @@ const Search = () => {
     </div>
   );
 };
-const Image = () => {
+const Image = ({ src }) => {
   return (
     <div>
-      <img
-        src="https://media4.giphy.com/media/k75w5q3eo0PFi7XbIj/giphy.gif?cid=ecf05e47qh6ahl2ug9f7t2dqyv45pdpyknanyq0f1cgpfp0z&ep=v1_gifs_gifId&rid=giphy.gif&ct=g"
-        alt="img of Gihpy"></img>
+      <img src={src} alt="img of Gihpy"></img>
     </div>
   );
 };

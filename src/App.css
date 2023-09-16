@@ -41,7 +41,13 @@ body{
   gap: 10px;
   color: #dadada;
 } */
-
+img {
+  padding: 1em;
+  background: #64c4b0;
+  width: 100vw;
+  max-height: 400px;
+  object-fit: contain;
+}
 
 header {
   display: flex;
